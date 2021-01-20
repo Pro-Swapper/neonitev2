@@ -2,8 +2,6 @@
 
 Fortnite lobby emulator with much customization options
 
-### As a acquiescence to Epic Games Inc.: <br> We are not providing any/support in-game cosmetics or a way to have them, if you want skins go buy them on the real game.
-
 ## Installation [![Run on Repl.it](https://repl.it/badge/github/kem0o/neonitev2)](https://repl.it/github/kem0o/neonitev2)
 
 1. Install the latest version of **[Node.JS](https://nodejs.org/en/download/current/)**.
@@ -17,7 +15,6 @@ Fortnite lobby emulator with much customization options
 9. Type in your username(Don't use any kind of special characters including spaces!)
 10. Click launch
 
-## FAQs
 #### • The localhosted dashboard can be found [here](http://localhost:5595)
 #### • The standard port is `5595`
 #### • [NinjaRipper for Neonite](https://github.com/kem0o/FNinjaRipper)
@@ -36,14 +33,20 @@ Fortnite lobby emulator with much customization options
 • [NiteStats API](https://nitestats.com/) <img src="https://api.nitestats.com/v1/static/ns-logo.png" width="30" title="Fortnite-API"> Made by [VastBlast](https://github.com/VastBlast)
 
 ### Contributors
+- [Amrsatrio](https://github.com/Amrsatrio)
+Profile.js and much api reversing
 
-| Contributor | Helped with |
-| ----------- | ----------- |
-| [Amrsatrio](https://github.com/Amrsatrio)  | Profile.js and much api reversing |
-| [Beat-YT](https://github.com/Beat-YT)   | Pull Requests |
-| [Kyiro](https://github.com/Kyiro)   | Pull Requests |
-| [Tim](https://github.com/timjans01)   | Improving this awesome page |
-| [Ayal](https://github.com/AyalX)   | Management |
+- [GewoonIraj](https://github.com/GewoonIraj)
+Cataba shop hotfix
+
+- [Beat-YT](https://github.com/Beat-YT)
+PRs
+
+- [Ayal](https://github.com/AyalX)
+Management
+
+- [Tim](https://github.com/timjans01)
+Improving this awesome page
 
 ## Community Support
 <a href="https://discord.gg/pUKacSd"><img src="https://discordapp.com/api/guilds/703690937074974761/widget.png?style=banner2"></a>

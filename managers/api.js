@@ -2,7 +2,6 @@ const axios = require('axios');
 const path = require('path');
 const crypto = require("crypto");
 const fs = require('fs');
-const jwt = require("jsonwebtoken")
 
 module.exports = (app) => {
     //lightswitch
@@ -122,19 +121,8 @@ module.exports = (app) => {
 
 		let engine = fs.readFileSync(path.join(__dirname ,'../hotfixes/DefaultEngine.ini'));
 		let runtime = fs.readFileSync(path.join(__dirname ,'../hotfixes/DefaultRuntimeOptions.ini'));
-		let game = fs.readFileSync(path.join(__dirname ,'../hotfixes/DefaultGame.ini'));
 		res.json([{
-			"uniqueFilename": "DefaultEngine.neonite",
-			"filename": "DefaultEngine.ini",
-			"hash": crypto.createHash("sha1").update(engine).digest("hex"),
-			"hash256": crypto.createHash("sha256").update(engine).digest("hex"),
-			"length": engine.length,
-			"contentType": "application/octet-stream",
-			"uploaded": fs.statSync(path.join(__dirname ,'../hotfixes/DefaultEngine.ini')).mtime,
-			"storageType": "S3",
-			"doNotCache": false
-		},{
-			"uniqueFilename": "DefaultGame.neonite",
+			"uniqueFilename": "3460cbe1c57d4a838ace32951a4d7171",
 			"filename": "DefaultEngine.ini",
 			"hash": crypto.createHash("sha1").update(engine).digest("hex"),
 			"hash256": crypto.createHash("sha256").update(engine).digest("hex"),
@@ -145,7 +133,7 @@ module.exports = (app) => {
 			"doNotCache": false
 		},
 		{
-			"uniqueFilename": "Runtime.neonite",
+			"uniqueFilename": "c52c1f9246eb48ce9dade87be5a66f29",
 			"filename": "DefaultRuntimeOptions.ini",
 			"hash": crypto.createHash("sha1").update(runtime).digest("hex"),
 			"hash256": crypto.createHash("sha256").update(runtime).digest("hex"),
@@ -158,19 +146,14 @@ module.exports = (app) => {
 	});
 
 	//cba adding more
-	app.get('/fortnite/api/cloudstorage/system/DefaultEngine.neonite', (req, res) => {
+	app.get('/fortnite/api/cloudstorage/system/3460cbe1c57d4a838ace32951a4d7171', (req, res) => {
 		res.setHeader("content-type", "application/octet-stream")
 		res.sendFile(path.join(__dirname ,'../hotfixes/DefaultEngine.ini'));
 	});
 
-	app.get('/fortnite/api/cloudstorage/system/Runtime.neonite', (req, res) => {
+	app.get('/fortnite/api/cloudstorage/system/c52c1f9246eb48ce9dade87be5a66f29', (req, res) => {
 		res.setHeader("content-type", "application/octet-stream")
 		res.sendFile(path.join(__dirname ,'../hotfixes/DefaultRuntimeOptions.ini'));
-	});
-	
-	app.get('/fortnite/api/cloudstorage/system/DefaultGame.neonite', (req, res) => {
-		res.setHeader("content-type", "application/octet-stream")
-		res.sendFile(path.join(__dirname ,'../hotfixes/DefaultGame.ini'));
 	});
 	
 	app.get('/fortnite/api/cloudstorage/user/:accountId', (req, res) => {
@@ -204,100 +187,4 @@ module.exports = (app) => {
 	app.get("/fortnite/api/matchmaking/session/findPlayer/:id", (req, res) => {
 		res.json([])
 	})
-
-	app.all("/fortnite/api/game/v2/matchmakingservice/ticket/player/:accountId", (req, res) => {
-	var subregions = req.params.subregions
-	var partyId = req.params.partyId
-	var platform = req.params.platform
-
-	attribs = {    
-		"player.subregions": subregions,
-		"player.hasMultipleInputTypes": "",
-		"player.option.partyId": partyId,
-		"player.option.uiLanguage": "",
-		"player.platform": platform,
-		"player.preferredSubregion": "",
-		"player.option.spectator": "",
-		"player.inputTypes": "",
-		"player.input": "",
-		"playlist.revision": "",
-		"player.teamFormat": "",
-		"player.option.microphoneEnabled": ""}
-	
-		var ticketToken = jwt.sign({
-		playerId: req.params.accountId,
-		partyPlayerIds: [req.params.accountId],
-		bucketId: "",
-		attributes: attribs,
-		expireAt: ""
-	}, "bignuts")
-
-	res.json({
-		serviceUrl: "",
-		ticketType: "",
-		payload: ticketToken,
-		signature: "bignuts"
-	});
-});
-
-app.all("/fortnite/api/game/v2/matchmaking/account/:accId/session/:sessId", (req, res) => {
-
-	res.json({
-		accountId: req.params.accId,
-		sessionId: "",
-		key:""
-	});
-});		
-	app.all("/fortnite/api/matchmaking/session/:sessionId", (req, res) => {
-		res.json({
-				"id": "",
-				"ownerId": "",
-				"ownerName": "",
-				"serverName": "",
-				"serverAddress": "0.0.0.0",
-				"serverPort": 0,
-				"maxPublicPlayers": 0,
-				"openPublicPlayers": 0,
-				"maxPrivatePlayers": 0,
-				"openPrivatePlayers": 0,
-				"attributes": {
-					"REGION_s": "",
-					"GAMEMODE_s": "",
-					"ALLOWBROADCASTING_b": "",
-					"SUBREGION_s": "",
-					"DCID_s": "",
-					"NEEDS_i": 0,
-					"NEEDSSORT_i": 0,
-					"tenant_s": "",
-					"MATCHMAKINGPOOL_s": "Any",
-					"STORMSHIELDDEFENSETYPE_i": 0,
-					"HOTFIXVERSION_i": 0,
-					"PLAYLISTNAME_s": "",
-					"MATCHSTARTTIME_s": "",
-					"SESSIONKEY_s": "",
-					"TENANT_s": "Fortnite",
-					"BEACONPORT_i": 0
-				},
-				"publicPlayers": [],
-				"privatePlayers": [],
-				"totalPlayers": 0,
-				"allowJoinInProgress": false,
-				"shouldAdvertise": false,
-				"isDedicated": false,
-				"usesStats": false,
-				"allowInvites": false,
-				"usesPresence": false,
-				"allowJoinViaPresence": false,
-				"allowJoinViaPresenceFriendsOnly": false,
-				"buildUniqueId": "",
-				"lastUpdated": "",
-				"started": true
-			
-		});
-	});		
-		
-	app.all("/fortnite/api/matchmaking/session/:sId/join", (req, res) => {
-		res.status(204).send();
-	});
-
-};
+}
