@@ -1,8 +1,8 @@
 {
   "_id": "Kye",
   "created": "2021-01-20T10:38:39.580Z",
-  "updated": "2021-01-20T10:39:21.670Z",
-  "rvn": 5,
+  "updated": "2021-01-20T20:02:22.517Z",
+  "rvn": 16,
   "wipeNumber": 1,
   "accountId": "Kye",
   "profileId": "athena",
@@ -36,14 +36,14 @@
             },
             "Character": {
               "items": [
-                "AthenaCharacter:cid_028_athena_commando_f"
+                "AthenaCharacter:cid_612_athena_commando_f_streetopspink"
               ],
               "activeVariants": [
                 {
                   "variants": [
                     {
                       "channel": "Material",
-                      "active": "Mat2",
+                      "active": "Mat1",
                       "owned": []
                     }
                   ]
@@ -65579,5 +65579,5 @@
       "active_loadout_index": 0
     }
   },
-  "commandRevision": 3
+  "commandRevision": 14
 }
