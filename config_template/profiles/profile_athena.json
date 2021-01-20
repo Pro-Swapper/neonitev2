@@ -1,9 +1,8 @@
 {
   "_id": "",
-  "Update": "profile by tim",
-  "created": "2020-10-22T04:50:49.839Z",
-  "updated": "2020-12-04T15:20:43.863Z",
-  "rvn": 19,
+  "created": "",
+  "updated": "",
+  "rvn": 1,
   "wipeNumber": 1,
   "accountId": "",
   "profileId": "athena",
@@ -16,45 +15,47 @@
           "slots": {
             "Pickaxe": {
               "items": [
-                ""
+                null
               ],
               "activeVariants": []
             },
             "Dance": {
               "items": [
-                "",
-                "",
-                "",
-                "",
-                "",
-                ""
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
               ]
             },
             "Glider": {
               "items": [
-                ""
+                null
               ]
             },
             "Character": {
               "items": [
-                ""
+                "AthenaCharacter:cid_028_athena_commando_f"
               ],
-              "activeVariants": [
-                {
-                  "variants": []
-                }
-              ]
+              "activeVariants": []
             },
             "Backpack": {
-              "items": [],
-              "activeVariants": [
-                {
-                  "variants": []
-                }
-              ]
+              "items": [
+                null
+              ],
+              "activeVariants": []
             },
             "ItemWrap": {
-              "items": [],
+              "items": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
               "activeVariants": [
                 null,
                 null,
@@ -66,28 +67,125 @@
               ]
             },
             "LoadingScreen": {
-              "items": [],
+              "items": [
+                null
+              ],
               "activeVariants": [
                 null
               ]
             },
             "MusicPack": {
               "items": [
-                ""
+                null
               ],
               "activeVariants": [
                 null
               ]
             },
             "SkyDiveContrail": {
-              "items": [],
+              "items": [
+                null
+              ],
               "activeVariants": [
                 null
               ]
             }
           }
         },
-        "use_count": 1,
+        "use_count": 0,
+        "banner_icon_template": "",
+        "locker_name": "",
+        "banner_color_template": "",
+        "item_seen": false,
+        "favorite": false
+      },
+      "quantity": 1
+    },
+    "loadout_1": {
+      "templateId": "CosmeticLocker:cosmeticlocker_athena",
+      "attributes": {
+        "locker_slots_data": {
+          "slots": {
+            "Pickaxe": {
+              "items": [
+                null
+              ],
+              "activeVariants": []
+            },
+            "Dance": {
+              "items": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "Glider": {
+              "items": [
+                null
+              ]
+            },
+            "Character": {
+              "items": [
+                "AthenaCharacter:cid_028_athena_commando_f"
+              ],
+              "activeVariants": []
+            },
+            "Backpack": {
+              "items": [
+                null
+              ],
+              "activeVariants": []
+            },
+            "ItemWrap": {
+              "items": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "activeVariants": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ]
+            },
+            "LoadingScreen": {
+              "items": [
+                null
+              ],
+              "activeVariants": [
+                null
+              ]
+            },
+            "MusicPack": {
+              "items": [
+                null
+              ],
+              "activeVariants": [
+                null
+              ]
+            },
+            "SkyDiveContrail": {
+              "items": [
+                null
+              ],
+              "activeVariants": [
+                null
+              ]
+            }
+          }
+        },
+        "use_count": 0,
         "banner_icon_template": "",
         "locker_name": "",
         "banner_color_template": "",
@@ -99,36 +197,36 @@
   },
   "stats": {
     "attributes": {
-      "season_match_boost": 0,
+      "season_match_boost": 999,
       "loadouts": [
-        "sandbox_loadout"
+        "sandbox_loadout",
+        "loadout_1"
       ],
       "rested_xp_overflow": 0,
       "mfa_reward_claimed": true,
       "quest_manager": {},
-      "book_level": 0,
-      "season_num": 15,
-      "season_update": 1,
-      "book_xp": 1,
+      "book_level": 1000,
+      "season_num": 14,
+      "season_update": 0,
+      "book_xp": 0,
       "permissions": [],
       "book_purchased": true,
-      "lifetime_wins": 0,
+      "lifetime_wins": 999,
       "party_assist_quest": "",
       "purchased_battle_pass_tier_offers": [],
       "rested_xp_exchange": 0.333,
-      "level": 0,
+      "level": 1000,
       "xp_overflow": 0,
-      "rested_xp": 0,
-      "rested_xp_mult": 0,
-      "accountLevel": 0,
+      "rested_xp": 204000,
+      "rested_xp_mult": 12.75,
+      "accountLevel": 10000,
       "competitive_identity": {},
       "inventory_limit_bonus": 0,
-      "last_applied_loadout": "sandbox_loadout",
+      "last_applied_loadout": "loadout_1",
       "daily_rewards": {},
-      "xp": 0,
-      "season_friend_match_boost": 1,
-      "active_loadout_index": 1
+      "xp": 50000,
+      "season_friend_match_boost": 0,
+      "active_loadout_index": 0
     }
-  },
-  "commandRevision": 0
+  }
 }
