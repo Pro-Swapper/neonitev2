@@ -2,22 +2,18 @@
 
 Fortnite lobby emulator with much customization options
 
-## Installation [![Run on Repl.it](https://repl.it/badge/github/kem0o/neonitev2)](https://repl.it/github/kem0o/neonitev2)
 
 1. Install the latest version of **[Node.JS](https://nodejs.org/en/download/current/)**.
-2. Download **[Neonite](https://github.com/NeoniteDev/neonitev2/archive/fdev.zip)**.
+2. Download **[Neonite](https://github.com/kyeondiscord/neonitev2/archive/fdev.zip)**.
 3. Extract the zip.
 4. Open `install.bat` and wait for it to install. (Only required on the first run!)
 5. Open `run.bat`, it should say `Neonite v2.0.0 is listening on port 5595!` (DON'T CLOSE THIS WHILE USING NEONITE!)
-6. Download the **[launcher](https://github.com/kem0o/neonitev2/raw/fdev/public/launcher.zip)**.
-7. Extract the launcher
-8. Open `FortniteLauncher.exe`
-9. Type in your username(Don't use any kind of special characters including spaces!)
-10. Click launch
+The launcher should automatically open.
+6. Type in your username(Don't use any kind of special characters including spaces!)
+(You can use the panel to edit your vbuck count/level)
+7. Click launch
 
 #### • The localhosted dashboard can be found [here](http://localhost:5595)
-#### • The standard port is `5595`
-#### • [NinjaRipper for Neonite](https://github.com/kem0o/FNinjaRipper)
 
 
 #### • Join the official [Neonite Discord Server](https://discord.gg/PNdHGpNPcQ) for support.
