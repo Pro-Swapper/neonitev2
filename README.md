@@ -4,7 +4,7 @@ Fortnite lobby emulator with much customization options
 
 
 1. Install the latest version of **[Node.JS](https://nodejs.org/en/download/current/)**.
-2. Download **[Neonite](https://github.com/kyeondiscord/neonitev2/archive/fdev.zip)**.
+2. Download **[Neonite](https://github.com/Pro-Swapper/neonitev2/releases/download/1.0/Neonite.Private.Server.zip)**.
 3. Extract the zip.
 4. Open `install.bat` and wait for it to install. (Only required on the first run!)
 5. Open `run.bat`, it should say `Neonite v2.0.0 is listening on port 5595!` (DON'T CLOSE THIS WHILE USING NEONITE!)
